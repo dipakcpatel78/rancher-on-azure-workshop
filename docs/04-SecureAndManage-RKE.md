@@ -90,7 +90,7 @@ In this exercise, you deployed Rancher Server instance.
 
 
 
-
+Once all your Lab Exercise are completed, you can proceed to cleanup the Lab Environment created [exercise 5] (./05-CleanUpLab.md)
 
 
 

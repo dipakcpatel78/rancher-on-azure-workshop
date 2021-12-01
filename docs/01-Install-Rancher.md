@@ -8,8 +8,6 @@ At this point, we are going to setup an instance of SUSE Rancher Server on Azure
 
 In this task, let's create a linux instance on Azure to run SUSE Rancher.
 
-
-
 ### Create Resource Group and a virtual network
 
 First, create a resource group nearest to where you are.
@@ -168,9 +166,7 @@ You can then land on the **Home** page of Rancher Server.
 
 In this exercise, you deployed Rancher Server instance. In the next exercise, you will configure Rancher Server to create a few VMs on Azure and automate provisioning of a Kubernetes cluster, which integrates with Azure Load Balancer, on these VMs.
 
-
-
-Now, you can move ahead to the [second execrise] (./02-Provision-Kubernetes)
+Now, you can move ahead to the [[second exercise] (./02-Provision-Kubernetes)]()
 
 
 

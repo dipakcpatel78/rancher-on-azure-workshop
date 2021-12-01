@@ -184,6 +184,8 @@ In this step, we will be deploying Wordpress as a stateful application in the Ku
 
 In this exercise, you deployed Rancher Server instance.
 
+Now, you can move ahead to the [exercise 4] (./04-Secure and Manager RKE.md) 
+
 
 
 
