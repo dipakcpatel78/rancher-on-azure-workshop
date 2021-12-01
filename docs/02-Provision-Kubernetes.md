@@ -194,6 +194,12 @@ sudo su
 cd /var/lib/rancher/rke2/server/manifests
 ```
 
+Create a new file using Vi Editor
+
+```
+rke2-ingress-nginx-config.yaml
+```
+
 Save the following content into a file `rke2-ingress-nginx-config.yaml` under this folder. 
 
 ```
@@ -210,6 +216,10 @@ spec:
     defaultBackend:
       enabled: true        
 ```
+
+To Save, Esc & :wq. 
+
+If that does not work, try ctrl+[ and type :wq to save you changes and close the file.
 
 Once saved, the changes in reconfiguring rke2-ingress-nginx will get effective. As you can see in the Events log of **rke2** cluster in **Cluster Explorer**, **Azure Load Balancer** is now created to route external traffic into Nginx Ingress Controller.
 
