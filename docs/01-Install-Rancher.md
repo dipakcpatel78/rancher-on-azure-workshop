@@ -166,7 +166,11 @@ You can then land on the **Home** page of Rancher Server.
 
 In this exercise, you deployed Rancher Server instance. In the next exercise, you will configure Rancher Server to create a few VMs on Azure and automate provisioning of a Kubernetes cluster, which integrates with Azure Load Balancer, on these VMs.
 
-Now, you can move ahead to the [[second exercise] (./02-Provision-Kubernetes)]()
+Now, you can move ahead to the [[second exercise] (./02-Provision-Kubernetes.md)
+
+
+
+Now, you can move ahead to the [second exercise](./02-Install-Rancher.md) of the lab.
 
 
 
