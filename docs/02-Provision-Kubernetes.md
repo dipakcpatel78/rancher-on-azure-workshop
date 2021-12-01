@@ -197,7 +197,7 @@ cd /var/lib/rancher/rke2/server/manifests
 Create a new file using Vi Editor
 
 ```
-rke2-ingress-nginx-config.yaml
+vi rke2-ingress-nginx-config.yaml
 ```
 
 Save the following content into a file `rke2-ingress-nginx-config.yaml` under this folder. 
