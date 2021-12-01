@@ -229,7 +229,7 @@ Once saved, the changes in reconfiguring rke2-ingress-nginx will get effective. 
 
 In this exercise, you deployed a Kubernetes cluster (RKE2) within SUSE Rancher web interface with integration of Azure Load Balancer to the built-in NGINX ingress controller in the cluster. We also learned how to examine the logs of the cluster nodes. In the next section, we are going to deploy application onto the RKE2 cluster.
 
-Now, you can move ahead to the [exercise 3] (./03-Deploy Apps on RKE.md) 
+Now, you can move ahead to the [exercise 3] (./03-DeployApps-on-RKE.md)
 
 
 
