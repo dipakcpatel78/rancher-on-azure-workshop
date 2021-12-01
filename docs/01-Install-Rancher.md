@@ -170,7 +170,7 @@ Now, you can move ahead to the [[second exercise] (./02-Provision-Kubernetes.md)
 
 
 
-Now, you can move ahead to the [second exercise](./02-Install-Rancher.md) of the lab.
+Now, you can move ahead to the [second exercise](./02-Provision-Kubernetes.md) of the lab.
 
 
 
