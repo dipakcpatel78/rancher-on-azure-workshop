@@ -132,6 +132,8 @@ Install the software required to execute the Rancher installation script.
 sudo zypper install -y git jq
 ```
 
+![OpenSUSE system update](images/OpenSUSE system update.png)
+
 ### Download Rancher installation script
 
 ```bash
@@ -148,8 +150,11 @@ cd rancher-on-azure-workshop/scripts
 ```
 
 This script will
+
 * Install Kubernetes tools (kubectl and helm),
 * Deploy Rancher Install on RKE2 cluster.
+
+![install-rancher](images/install-rancher.png)
 
 In about 5-10 minutes, your Rancher Server should be ready. If you see the example output shown below, this means you have successfully deployed Rancher Server on the virtual machine. Note down the Rancher URL and initial bootstrap password.
 
