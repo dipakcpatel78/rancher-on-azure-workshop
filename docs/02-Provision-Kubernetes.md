@@ -215,7 +215,7 @@ If that does not work, try ctrl+[ and type :wq to save you changes and close the
 
 Once saved, the changes in reconfiguring rke2-ingress-nginx will get effective. As you can see in the Events log of **rke2** cluster in **Cluster Explorer**, **Azure Load Balancer** is now created to route external traffic into Nginx Ingress Controller.
 
-
+![NGINX Controller](images/NGINX Controller-16384389473371.png)
 
 ### Next steps
 
