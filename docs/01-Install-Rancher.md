@@ -28,6 +28,12 @@ az network vnet create --resource-group Rancher \
   --subnet-name rancher-subnet --subnet-prefix 10.0.0.0/24
 ```
 
+![exercise1-task1-2-1-create-virtual-network](images/exercise1-task1-2-1-create-virtual-network.png)
+
+
+
+![exercise1-task1-2-2-create-virtual-network-Subnet](images/exercise1-task1-2-2-create-virtual-network-Subnet.png)
+
 
 
 ### Create a Linux virtual machine using OpenSUSE Leap 15.3
@@ -65,6 +71,10 @@ It takes a 2-3 minutes to create this VM and supporting resources. The following
 Command ran in 92.491 seconds (init: 0.115, invoke: 92.376)
 ```
 
+![exercise1-task1-2-3-create-OpenSUSELeap15sp3-VM-pg1](images/exercise1-task1-2-3-create-OpenSUSELeap15sp3-VM-pg1.png)
+
+![exercise1-task1-2-3-create-OpenSUSELeap15sp3-VM-pg2](images/exercise1-task1-2-3-create-OpenSUSELeap15sp3-VM-pg2.png)
+
 
 
 ### Open port 443 for web traffic
@@ -75,7 +85,9 @@ By default, only SSH connections are opened when you create a Linux VM in Azure.
 az vm open-port --port 443 --resource-group rancher --name rancher
 ```
 
+![exercise1-task1-2-4-VM-Port-443-for-web-traffic-pg1](images/exercise1-task1-2-4-VM-Port-443-for-web-traffic-pg1.png)
 
+### ![exercise1-task1-2-4-VM-Port-443-for-web-traffic-pg2](images/exercise1-task1-2-4-VM-Port-443-for-web-traffic-pg2.png)
 
 ### Connect to virtual machine
 
@@ -126,6 +138,8 @@ sudo zypper install -y git jq
 git clone https://github.com/dsohk/rancher-on-azure-workshop/
 cd rancher-on-azure-workshop/scripts
 ```
+
+![exercise1-task2-download-rancher-installation-script-latest](images/exercise1-task2-download-rancher-installation-script-latest.png)
 
 ### Install Rancher Server
 

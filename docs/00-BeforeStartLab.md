@@ -17,6 +17,8 @@ You should follow all of the steps provided in this section *before* taking part
 
 4. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
+   ![sandbox landing page1](images/sandbox landing page1.png)
+
 5. In the **Azure portal**, open the **Azure Cloud Shell** by clicking on the cloud shell icon in the top menu bar. Alternatively, you can open cloud shell by navigating to `https://shell.azure.com`.
 
    ![msazure-cloudshell](./images/msazure-cloudshell.png)
