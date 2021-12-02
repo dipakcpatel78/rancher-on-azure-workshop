@@ -158,6 +158,8 @@ This script will
 
 In about 5-10 minutes, your Rancher Server should be ready. If you see the example output shown below, this means you have successfully deployed Rancher Server on the virtual machine. Note down the Rancher URL and initial bootstrap password.
 
+![Rancher Success and URL](images/Rancher Success and URL.png)
+
 ```
 ---------------------------------------------------------
 Your Rancher Server is ready.

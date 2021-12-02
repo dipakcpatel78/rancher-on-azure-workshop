@@ -33,22 +33,16 @@ Let's configure Rancher and provision a Kubernetes cluster (RKE2) of 2 VMs (one 
 
 
 4. At this point, we need to configure Rancher to be able to automate provisioning on Azure with a proper cloud credential. Fill in the form with your own credential.
-   - Subscription ID: (See lab manual instruction)
-   - Client ID: (See lab manual instruction)
-   - Client Secret: (See lab manual instruction)
+   - Subscription ID: (See lab manual instruction - Open the text file located on your desktop for details)  
+   - Client ID: (See lab manual instruction - Open the text file located on your desktop for details) 
+   - Client Secret: (See lab manual instruction - Open the text file located on your desktop for details) 
+
+![Azure detials provided by Azure Cloud Service Provider](images/Azure detials provided by Azure Cloud Service Provider-16384360102401.png)
 
 
 ![rancher-create-cluster-azure-credential](./images/rancher-create-cluster-azure-credential.png)
 
-
-
-
-
-
-
 5. You will now be shown a Create Cluster on Azure form. We are going to name the cluster, create 2 machine pools for it (one for master node pool and one for worker nodes pool), and configure Azure cloud provider for this cluster.
-
-
 
 ![rancher-create-cluster-master-pool](./images/rancher-create-cluster-master-pool.png)
 
@@ -59,6 +53,7 @@ Fill in the form with details below.
 
 
 - Cluster name: **rke2**
+
 - Setup 2 Machine Pools
    - Pool Name: **master**
      - Machine Count: **1**
@@ -88,18 +83,19 @@ Fill in the form with details below.
        - Virtual Network: **mylab-vnet**
        - Public IP Options: **No Public IP**
        - Network Security Group: **rke2-worker-nsg**
-- Scroll down to the **Cluster Configuration** section, under the  **Basics** section, choose **Cloud Provider** as **Azure**. In the given **Cloud Provider Config** field, please paste the configuration from the command line. For details of this configuration, please refer to the [Azure Cloud Provider](https://kubernetes-sigs.github.io/cloud-provider-azure/install/configs/) documentation site.
+   
+- Scroll down to the **Cluster Configuration** section, under the  **Basics** section, choose **Cloud Provider** as **Azure**. In the given **Cloud Provider Config** field, please paste the configuration from the command line. For details of this configuration step 4 above
 
-![rancher-create-cluster-cloud-config](./images/rancher-create-cluster-cloud-config.png)
+   ![rancher-create-cluster-cloud-config](./images/rancher-create-cluster-cloud-config.png)
 
 
    ```
    {
        "cloud": "AzurePublicCloud",
-       "tenantId": "my-tenant-id",
-       "aadClientId": "my-client-id",
-       "aadClientSecret": "my-secret",
-       "subscriptionId": "my-subscription-id",
+       "tenantId": "my-tenant-id",   - Replace the tentat ID you are provided with
+       "aadClientId": "my-client-id", - Replace the client ID you are provided with
+       "aadClientSecret": "my-secret", - Replace the secret you are provided with
+       "subscriptionId": "my-subscription-id", - Replace subcription ID you are provided with
        "resourceGroup": "Rancher",
        "location": "southeastasia",
        "subnetName": "rke2-worker-subnet",
@@ -171,11 +167,9 @@ The whole RKE2 cluster creation process, from VM provisioning to RKE2 deployment
 
 Let's add a new worker node on RKE2. In the machine list of the RKE2 cluster detail page, click the + button in the worker pool section. Rancher will then automatically provision a new virtual machine within the same worker node pool and join the new node as part of the RKE2 cluster.
 
+![creating additional worker node-scaleup-function](images/creating additional worker node-scaleup-function.png)
 
-
-![rancher-rke2-add-worker-node](./images/rancher-rke2-add-worker-node.png)
-
-
+We now have our RKE2 Cluster (1 Master & 2 Worker Node) ready. The entire operation of deployment took > 15- 20 mins![rke2 cluster ready](images/rke2 cluster ready.png)
 
 ## Task 5: Expose NGINX Ingress Controller on RKE2 to Azure Load Balancer
 
@@ -183,11 +177,9 @@ By default the ingress controller deployed on RKE is exposed as internal service
 
 SSH into master node within SUSE Rancher. Place the following snippet to `/var/lib/rancher/rke2/server/manifests` folder in any of the RKE2 master nodes. This will reconfigure the nginx ingress controller to expose itself to LoadBalancer service.
 
-
+![SSH into Master Node-pg1](../../../../mnt/data/Data/SUSE OneDrive/SUSE/SE Role/SUSE SE Learning/New Structure - Jan 2021/Technical Training/Self Learning -IT - Technical Training/SUSE/Rancher/Azure workshop Dec 2021/pics/exercise2/SSH into Master Node-pg1.png)
 
 ![rancher-rke2-master-node-config-ingress](./images/rancher-rke2-master-node-config-ingress.png)
-
-
 
 ```
 sudo su 
