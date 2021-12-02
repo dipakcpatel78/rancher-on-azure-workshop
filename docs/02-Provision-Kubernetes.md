@@ -167,7 +167,7 @@ The whole RKE2 cluster creation process, from VM provisioning to RKE2 deployment
 
 Let's add a new worker node on RKE2. In the machine list of the RKE2 cluster detail page, click the + button in the worker pool section. Rancher will then automatically provision a new virtual machine within the same worker node pool and join the new node as part of the RKE2 cluster.
 
-![creating additional worker node-scaleup-function](images/creating additional worker node-scaleup-function.png)
+![Scale up worker node](images/Scale up worker node.png)
 
 We now have our RKE2 Cluster (1 Master & 2 Worker Node) ready. The entire operation of deployment took > 15- 20 mins![rke2 cluster ready](images/rke2 cluster ready.png)
 
