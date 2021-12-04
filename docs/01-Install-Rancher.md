@@ -28,6 +28,8 @@ az network vnet create --resource-group Rancher \
   --subnet-name rancher-subnet --subnet-prefix 10.0.0.0/24
 ```
 
+
+
 ![exercise1-task1-2-1-create-virtual-network](images/exercise1-task1-2-1-create-virtual-network.png)
 
 
@@ -70,6 +72,8 @@ It takes a 2-3 minutes to create this VM and supporting resources. The following
 }
 Command ran in 92.491 seconds (init: 0.115, invoke: 92.376)
 ```
+
+![Exercise1-Task1-RancherVM](../../../../../../../../../../../../../../../home/dpatel/rancher-on-azure-workshop/docs/images/Exercise1-Task1-RancherVM-16386364356532.png)
 
 ![exercise1-task1-2-3-create-OpenSUSELeap15sp3-VM-pg1](images/exercise1-task1-2-3-create-OpenSUSELeap15sp3-VM-pg1.png)
 
