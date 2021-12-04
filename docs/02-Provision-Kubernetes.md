@@ -177,7 +177,9 @@ By default the ingress controller deployed on RKE is exposed as internal service
 
 SSH into master node within SUSE Rancher. Place the following snippet to `/var/lib/rancher/rke2/server/manifests` folder in any of the RKE2 master nodes. This will reconfigure the nginx ingress controller to expose itself to LoadBalancer service.
 
-![SSH into Master Node-pg1](../../../../mnt/data/Data/SUSE OneDrive/SUSE/SE Role/SUSE SE Learning/New Structure - Jan 2021/Technical Training/Self Learning -IT - Technical Training/SUSE/Rancher/Azure workshop Dec 2021/pics/exercise2/SSH into Master Node-pg1.png)
+![ssh-into-master-node-pg1](./images/ssh-into-master-node-pg1.png)
+
+
 
 ![rancher-rke2-master-node-config-ingress](./images/rancher-rke2-master-node-config-ingress.png)
 
