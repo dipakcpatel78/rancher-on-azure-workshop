@@ -34,7 +34,7 @@ Let's configure Rancher and provision a Kubernetes cluster (RKE2) of 2 VMs (one 
 
 4. At this point, we need to configure Rancher to be able to automate provisioning on Azure with a proper cloud credential. Fill in the form with your own credential.
    - Subscription ID: (See lab manual instruction - Open the text file located on your desktop for details)  
-   - Client ID: (See lab manual instruction - Open the text file located on your desktop for details) 
+   - Client ID: (See lab manual instruction - Open the text file located on your desktop for details. Also note Application ID is here refered as Client ID) 
    - Client Secret: (See lab manual instruction - Open the text file located on your desktop for details) 
 
 ![Azure detials provided by Azure Cloud Service Provider](images/Azure detials provided by Azure Cloud Service Provider-16384360102401.png)
